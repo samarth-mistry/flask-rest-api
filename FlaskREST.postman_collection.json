@@ -1,0 +1,95 @@
+{
+	"variables": [],
+	"info": {
+		"name": "FlaskREST",
+		"_postman_id": "586a6190-1d26-8184-f0b6-252d83aa0738",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sec 3",
+			"description": "",
+			"item": [
+				{
+					"name": "/store",
+					"request": {
+						"url": "http://127.0.0.1:5000/store",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/store/<name>",
+					"request": {
+						"url": "http://127.0.0.1:5000/store/DD Store",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/store/<name>/item",
+					"request": {
+						"url": "http://127.0.0.1:5000/store/DD Store",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/store",
+					"request": {
+						"url": "http://127.0.0.1:5000/store",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Another Store\"\n}"
+						},
+						"description": "add store\n"
+					},
+					"response": []
+				},
+				{
+					"name": "/store/<name>/item",
+					"request": {
+						"url": "http://127.0.0.1:5000/store/DD Store/item",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Another Item\",\n\t\"price\": 10.99\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sec 4",
+			"description": "",
+			"item": []
+		}
+	]
+}
